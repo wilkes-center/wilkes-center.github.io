@@ -1,0 +1,188 @@
+/* Main styles for Wilkes Center Tools Gallery */
+
+:root {
+    /* Color palette from style guide */
+    --color-obsidian: #1a1a1a;
+    --color-tan: #cea25d;
+    --color-sage: #99aa88;
+    --color-green: #2d5954;
+    --color-white: #f9f6ef;
+    --color-mahogany: #7b3d0c;
+    --color-blue: #7b8ba8;
+    --color-rust: #dd3b00;
+    
+    /* Font sizes */
+    --font-xl: 36pt;
+    --font-lg: 20pt;
+    --font-md: 15pt;
+    --font-sm: 9pt;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    color: var(--color-obsidian);
+    background-color: var(--color-white);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: var(--color-obsidian);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header .logo {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: var(--font-xl);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Main content */
+main {
+    padding: 60px 0;
+}
+
+.tools-gallery {
+    margin-bottom: 60px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.tool-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.tool-thumbnail {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tool-thumbnail img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+}
+
+.tool-card h2 {
+    font-size: var(--font-lg);
+    font-weight: 600;
+    padding: 20px 20px 10px;
+    color: var(--color-obsidian);
+}
+
+.tool-card p {
+    font-size: var(--font-sm);
+    padding: 0 20px 20px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-obsidian);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 20px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-mahogany);
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--color-obsidian);
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    font-size: var(--font-sm);
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+} 

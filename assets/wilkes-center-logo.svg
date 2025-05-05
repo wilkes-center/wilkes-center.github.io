@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 85" width="375" height="85">
+  <!-- University of Utah Logo (Red Block 'U') -->
+  <g transform="translate(5, 10)">
+    <rect x="0" y="0" width="35" height="45" fill="#cc0000" />
+    <path d="M7 10 h21 v25 h-21 z" fill="white" />
+  </g>
+  
+  <!-- Diamond Mountain Icon -->
+  <g transform="translate(50, 10)">
+    <path d="M0,22.5 L22.5,0 L45,22.5 L22.5,45 Z" fill="#dd3b00" />
+    <path d="M5,22.5 L22.5,5 L40,22.5 L22.5,40 Z" fill="#2d5954" />
+  </g>
+  
+  <!-- Text -->
+  <g transform="translate(105, 15)">
+    <text font-family="Sora, sans-serif" font-weight="600" font-size="16" fill="#1a1a1a">THE WILKES CENTER</text>
+    <text font-family="Sora, sans-serif" font-weight="400" font-size="12" fill="#1a1a1a" y="20">FOR CLIMATE</text>
+    <text font-family="Sora, sans-serif" font-weight="400" font-size="12" fill="#1a1a1a" y="38">SCIENCE &amp; POLICY</text>
+  </g>
+</svg> 
